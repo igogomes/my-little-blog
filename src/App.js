@@ -1,5 +1,8 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Container from './components/layout/Container/Container';
+import Navbar from './components/layout/Navbar/Navbar'
+import Footer from './components/layout/Footer/Footer'
 
 import Home from './components/pages/Home'
 import Trending from './components/pages/Trending'
@@ -10,13 +13,7 @@ import Contact from './components/pages/Contact'
 function App() {
   return (
     <Router>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/trending">Em Alta</Link></li>
-        <li><Link to="/posts">Posts</Link></li>
-        <li><Link to="/about">Sobre</Link></li>
-        <li><Link to="/contact">Contato</Link></li>
-      </ul>
+      <Navbar />
       <Container customClass='minHeight'>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
@@ -26,6 +23,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </Container>
+      <Footer />
     </Router>
   );
 }
