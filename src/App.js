@@ -4,11 +4,11 @@ import Container from './components/layout/Container/Container';
 import Navbar from './components/layout/Navbar/Navbar'
 import Footer from './components/layout/Footer/Footer'
 
-import Home from './components/pages/Home'
-import Trending from './components/pages/Trending'
-import Posts from './components/pages/Posts'
-import About from './components/pages/About'
-import Contact from './components/pages/Contact'
+import Home from './components/pages/Home/Home'
+import Trending from './components/pages/Trending/Trending'
+import Posts from './components/pages/Posts/Posts'
+import About from './components/pages/About/About'
+import Contact from './components/pages/Contact/Contact'
 
 function App() {
   return (
