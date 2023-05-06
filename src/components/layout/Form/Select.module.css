@@ -1,0 +1,19 @@
+.formControl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.formControl label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+    color: #282B3A;
+}
+
+.formControl select {
+    padding: 0.5rem;
+    border-radius: 0;
+    border: none;
+    background-color: #fff;
+}

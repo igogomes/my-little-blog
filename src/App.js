@@ -9,6 +9,7 @@ import Trending from './components/pages/Trending/Trending'
 import Posts from './components/pages/Posts/Posts'
 import About from './components/pages/About/About'
 import Contact from './components/pages/Contact/Contact'
+import Article from "./components/pages/Article/Article";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/posts' element={<Posts/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/article' element={<Article />}/>
         </Routes>
       </Container>
       <Footer />

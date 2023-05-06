@@ -1,0 +1,22 @@
+.formControl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.formControl label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+    color: #282B3A;
+}
+
+.formControl input {
+    padding: 0.5rem;
+    border-radius: 0;
+    border: none;
+}
+
+.formControl input::placeholder {
+    color: #282b3a;
+}

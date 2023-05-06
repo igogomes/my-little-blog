@@ -1,0 +1,21 @@
+.formControl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.formControl label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.formControl textarea {
+    padding: 1rem;
+    border-radius: 0;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.formControl textarea::placeholder {
+    color: #7b7b7b;
+}
