@@ -1,0 +1,25 @@
+{
+    "projects": [],
+    "subjects": [
+        {
+            "id": 1,
+            "subject": "Elogio"
+        },
+        {
+            "id": 2,
+            "subject": "Reclamação"
+        },
+        {
+            "id": 3,
+            "subject": "Crítica"
+        },
+        {
+            "id": 4,
+            "subject": "Opinião"
+        },
+        {
+            "id": 5,
+            "subject": "Outros"
+        }
+    ]
+}
