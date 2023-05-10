@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Container from './components/layout/Container/Container';
+import Container from './components/layout/Container/Container'
 import Navbar from './components/layout/Navbar/Navbar'
 import Footer from './components/layout/Footer/Footer'
 
@@ -9,7 +9,8 @@ import Trending from './components/pages/Trending/Trending'
 import Posts from './components/pages/Posts/Posts'
 import About from './components/pages/About/About'
 import Contact from './components/pages/Contact/Contact'
-import Article from "./components/pages/Article/Article";
+import Article from './components/pages/Article/Article'
+import NewPost from './components/pages/NewPost/NewPost'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/article' element={<Article />}/>
+          <Route path='/newpost' element={<NewPost />}/>
         </Routes>
       </Container>
       <Footer />
