@@ -7,6 +7,8 @@
 .formControl label {
     margin-bottom: 0.5rem;
     font-weight: bold;
+    text-align: left;
+    color: #282B3A;
 }
 
 .formControl textarea {

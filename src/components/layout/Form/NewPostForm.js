@@ -35,8 +35,8 @@ function NewPostForm({ handleSubmit, btnTitle, direction, postData }) {
 
     return (
         <form onSubmit={submit} className={styles.containerNewPostForm}>
-            <Input type="text" text="Título" name="title" placeholder="Título da Postagem" handleOnChange={handleChange} value={post.title ? post.title : ''}/>
-            <TextArea name="body" id="body" rows="5" placeholder="Digite aqui o texto da postagem..." handleOnChange={handleChange} value={post.body ? post.body : ''}/>
+            <Input type="text" text="Digite o título da postagem" name="title" placeholder="Título da Postagem" handleOnChange={handleChange} value={post.title ? post.title : ''}/>
+            <TextArea name="body" id="body" label="Digite o texto da postagem" rows="5" placeholder="Digite aqui o texto da postagem..." handleOnChange={handleChange} value={post.body ? post.body : ''}/>
             <Hidden id="date" name="date" handleOnChange={handleChange} value={post.date ? post.date : ''}/>
             <SubmitButton text={btnTitle} to={direction} />
         </form>

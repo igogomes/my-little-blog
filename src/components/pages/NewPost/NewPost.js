@@ -28,13 +28,15 @@ function NewPost() {
     }
 
     return (
-        <div className={styles.NewPostContainer}>
-            <h1>Criar Nova Postagem</h1>
-            <p>Preencha o formulário abaixo para cadastrar uma nova postagem:</p>
+        <div className={styles.newPostContainer}>
+            <div className={styles.newPostIntroduction}>
+                <h1>Criar Nova Postagem</h1>
+                <p>Preencha o formulário abaixo para cadastrar uma nova postagem:</p>
+            </div>
             <div className={styles.containerNewPostForm}>
                 <NewPostForm handleSubmit={createPost} btnTitle="Enviar"/>
             </div>
-    </div>
+        </div>
     );
 }
 

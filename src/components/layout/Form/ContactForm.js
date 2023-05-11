@@ -27,7 +27,7 @@ function Form({ btnTitle, direction }) {
             <Input type="text" text="Digite seu nome" name="name" placeholder="Digite seu nome"/>
             <Input type="email" text="Digite seu e-mail" name="email" placeholder="Digite seu email"/>
             <Select name="subject" text="Selecione um assunto" options={subjects}/> 
-            <TextArea name="message" id="message" rows="5" placeholder="Digite sua mensagem aqui..."/>
+            <TextArea name="message" label="Digite sua mensagem" id="message" rows="5" placeholder="Digite sua mensagem aqui..."/>
             <SubmitButton text={btnTitle} to={direction} />
         </form>
     );
