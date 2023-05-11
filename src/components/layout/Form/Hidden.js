@@ -1,6 +1,6 @@
-function Hidden({ id, name, value }) {
+function Hidden({ id, name, value, handleOnChange }) {
     return (
-        <input type='hidden' id={id} name={name} value={value}/>
+        <input type='hidden' id={id} name={name} value={value} onChange={handleOnChange}/>
     );
 }
 

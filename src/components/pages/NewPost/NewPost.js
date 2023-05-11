@@ -2,18 +2,11 @@ import styles from './NewPost.module.css'
 
 import { useNavigate } from 'react-router-dom'
 import NewPostForm from '../../layout/Form/NewPostForm'
-import moment from 'moment'
 
 function NewPost() {
     const history = useNavigate();
 
     function createPost(post) {
-        var datePost = moment();
-        //Initialize title, body and date
-        post.title = '';
-        post.body = '';
-        post.date = datePost.format('DD/MM/YYYY');
-
         fetch('http://localhost:5000/posts', {
             method: 'POST',
             headers: {
@@ -34,7 +27,7 @@ function NewPost() {
                 <p>Preencha o formulário abaixo para cadastrar uma nova postagem:</p>
             </div>
             <div className={styles.containerNewPostForm}>
-                <NewPostForm handleSubmit={createPost} btnTitle="Enviar"/>
+                <NewPostForm handleSubmit={createPost} btnTitle="Enviar" direction="/posts"/>
             </div>
         </div>
     );
