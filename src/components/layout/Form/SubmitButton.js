@@ -1,11 +1,8 @@
-import { Link } from 'react-router-dom';
 import styles from './SubmitButton.module.css'
 
-function SubmitButton({ text, direction }) {
+function SubmitButton({ text }) {
     return (
-        <Link className={styles.btn} to={direction}>
-            {text}
-        </Link>
+        <button className={styles.btn}>{text}</button>
     );
 }
 

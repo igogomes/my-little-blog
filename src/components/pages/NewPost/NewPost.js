@@ -6,13 +6,13 @@ import NewPostForm from '../../layout/Form/NewPostForm'
 function NewPost() {
     const history = useNavigate();
 
-    function createPost(post) {
+    function createPost(postContent) {
         fetch('http://localhost:5000/posts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(post),
+            body: JSON.stringify(postContent),
         }).then((resp) => resp.json())
         .then((data) => {
             history('/posts', {message : 'Postagem criada com sucesso!'});
@@ -27,7 +27,7 @@ function NewPost() {
                 <p>Preencha o formulário abaixo para cadastrar uma nova postagem:</p>
             </div>
             <div className={styles.containerNewPostForm}>
-                <NewPostForm handleSubmit={createPost} btnTitle="Enviar" direction="/posts"/>
+                <NewPostForm handleSubmit={createPost} btnTitle="Enviar"/>
             </div>
         </div>
     );

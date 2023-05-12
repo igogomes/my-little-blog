@@ -5,7 +5,7 @@ import Select from './Select'
 import SubmitButton from './SubmitButton'
 import TextArea from './TextArea';
 
-function Form({ btnTitle, direction }) {
+function Form({ btnTitle }) {
     const [subjects, setSubjects] = useState([]);
 
     useEffect(() => {
@@ -28,7 +28,7 @@ function Form({ btnTitle, direction }) {
             <Input type="email" text="Digite seu e-mail" name="email" placeholder="Digite seu email"/>
             <Select name="subject" text="Selecione um assunto" options={subjects}/> 
             <TextArea name="message" label="Digite sua mensagem" id="message" rows="5" placeholder="Digite sua mensagem aqui..."/>
-            <SubmitButton text={btnTitle} to={direction} />
+            <SubmitButton text={btnTitle} />
         </form>
     );
 }
