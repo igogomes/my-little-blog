@@ -1,0 +1,19 @@
+.postsContainer {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.postsIntroduction {
+    color: #282B3A;
+}
+
+.postsIntroduction h1 {
+    padding-bottom: 10px;
+}
+
+.postsIntroduction a {
+    float: right;
+    margin-top: -44px;
+}

@@ -15,7 +15,7 @@ function NewPost() {
             body: JSON.stringify(postContent),
         }).then((resp) => resp.json())
         .then((data) => {
-            history('/posts', {message : 'Postagem criada com sucesso!'});
+            history('/posts', {state: {message : 'Postagem criada com sucesso!'}});
         })
         .catch(err => console.log(err))
     }

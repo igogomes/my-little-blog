@@ -1,0 +1,34 @@
+.message {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.message svg {
+    margin-bottom: -2px;
+    margin-right: 4px;
+}
+
+.success {
+    color: #3f700d;
+    background-color: #aae371;
+    border-color: #95dc4f;
+    box-shadow: 2px 2px 10px #95dc4f, -2px -2px 10px #ffffff;
+}
+
+.error {
+    color: #7a2a14;
+    background-color: #ee6c6f;
+    border-color: #ed524a;
+    box-shadow: 2px 2px 10px #ed524a, -2px -2px 10px #ffffff;
+}
+
+.warning {
+    color: #88710c;
+    background-color: #f9de5c;
+    border-color: #f7d633;
+    box-shadow: 2px 2px 10px #f7d633, -2px -2px 10px #ffffff;
+}
