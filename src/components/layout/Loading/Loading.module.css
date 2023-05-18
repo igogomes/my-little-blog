@@ -1,0 +1,11 @@
+.loadingContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingIcon {
+    width: 50px;
+    margin-top: 5%;
+}

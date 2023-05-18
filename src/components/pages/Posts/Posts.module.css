@@ -10,10 +10,16 @@
 }
 
 .postsIntroduction h1 {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
 }
 
-.postsIntroduction a {
-    float: right;
-    margin-top: -44px;
+.postCards {
+    display: inline-grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
 }
