@@ -35,8 +35,8 @@ function Home() {
                 <p>Ainda não há postagens no blog.</p>
             )}
             <div className={styles.postCards}>
-                {posts.length > 0 && posts.map((post) => (
-                    <PostCards img="https://picsum.photos/id/238/360/190" title={post.title} id={post.index} buttonTitle="Leia mais"/>
+                {posts.length > 0 && posts.slice(0, 6).map((post) => (
+                    <PostCards img="https://picsum.photos/id/238/360/190" title={post.title} key={post.id} buttonTitle="Leia mais"/>
                 ))}
             </div>
             <div className={styles.ButtonPostsHome}><Link to="/posts">Confira mais posts</Link></div>
