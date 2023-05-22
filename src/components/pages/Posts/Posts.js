@@ -47,7 +47,7 @@ function Posts() {
             )}
             <div className={styles.postCards}>
                 {posts.length > 0 && posts.map((post) => (
-                    <PostCards img="https://picsum.photos/id/238/360/190" title={post.title} id={post.id} buttonTitle="Leia mais"/>
+                    <PostCards img="https://picsum.photos/id/238/360/190" title={post.title} body={post.body} id={post.id} key={post.id} buttonTitle="Leia mais"/>
                 ))}
             </div>
         </div>

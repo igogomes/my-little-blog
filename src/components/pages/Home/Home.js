@@ -36,10 +36,10 @@ function Home() {
             )}
             <div className={styles.postCards}>
                 {posts.length > 0 && posts.slice(0, 6).map((post) => (
-                    <PostCards img="https://picsum.photos/id/238/360/190" title={post.title} key={post.id} buttonTitle="Leia mais"/>
+                    <PostCards img="https://picsum.photos/id/238/360/190" id={post.id} title={post.title} body={post.body} key={post.id} buttonTitle="Leia mais"/>
                 ))}
             </div>
-            <div className={styles.ButtonPostsHome}><Link to="/posts">Confira mais posts</Link></div>
+            {removeLoading && posts.length !== 0 && (<div className={styles.ButtonPostsHome}><Link to="/posts">Confira mais posts</Link></div>)}
         </section>
     );
 }

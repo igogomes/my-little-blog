@@ -16,11 +16,20 @@
     color: #282B3A;
 }
 
+.postCardContent p {
+    margin-bottom: 1.5rem;
+}
+
+.postCardsActions {
+    margin-bottom: 1.5rem;
+}
+
 .btn {
     background-color: #50caee;
     padding: 6px 12px;
     text-decoration: none;
     color: #172957;
+    margin-bottom: 1.5rem;
 }
 
 .btn:hover {
