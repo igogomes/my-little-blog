@@ -11,7 +11,7 @@ import About from './components/pages/About/About'
 import Contact from './components/pages/Contact/Contact'
 import Article from './components/pages/Article/Article'
 import NewPost from './components/pages/NewPost/NewPost'
-import EditPost from './components/pages/EditPost/EditPost'
+import ListPosts from './components/pages/ListPosts/ListPosts'
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/article' element={<Article />}/>
           <Route path='/newpost' element={<NewPost />}/>
-          <Route path='/editpost' element={<EditPost />}/>
+          <Route path='/listposts' element={<ListPosts />}/>
         </Routes>
       </Container>
       <Footer />

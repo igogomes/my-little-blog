@@ -31,7 +31,7 @@ function Navbar() {
             {userActive === "1" && <div className={styles.adminToolBar}>
                 <ul className={styles.adminList}>
                     <li className={styles.adminListItem}><Link to="/newpost"><FaPlusCircle /> Criar Post</Link></li>
-                    <li className={styles.adminListItem}><Link to="/editpost"><FaPen /> Editar Post</Link></li>
+                    <li className={styles.adminListItem}><Link to="/listposts"><FaPen /> Editar Post</Link></li>
                 </ul>
             </div>}
         </>
