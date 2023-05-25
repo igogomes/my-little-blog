@@ -19,7 +19,7 @@ function PostCardsEdition({id, img, title, body, handleRemove}) {
                 <h3>{title}</h3>
                 <p>{reduceBody(body)}</p>
                 <div className={styles.postCardsEditionActions}>
-                    <Link className={styles.btn} to={`/post/${id}`}>Editar</Link>
+                    <Link className={styles.btn} to={`/editpost/${id}`}>Editar</Link>
                     <button className={styles.btn} onClick={remove}>Excluir</button>
                 </div>
             </div>

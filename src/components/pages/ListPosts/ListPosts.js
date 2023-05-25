@@ -20,7 +20,7 @@ function ListPosts() {
 
     if(location.state) {
         message = location.state.message;
-        type = setPostMessageType('success');
+        type = location.state.type;
     }
 
     useEffect(() => {
