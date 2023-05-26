@@ -1,0 +1,23 @@
+.postContainer {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.postContainer img {
+    margin-bottom: 30px;
+}
+
+.postIntroduction {
+    color: #282B3A;
+}
+
+.postIntroduction h1 {
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.containerPost {
+    padding-top: 30px;
+}

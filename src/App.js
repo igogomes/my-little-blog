@@ -12,7 +12,8 @@ import Contact from './components/pages/Contact/Contact'
 import Article from './components/pages/Article/Article'
 import NewPost from './components/pages/NewPost/NewPost'
 import ListPosts from './components/pages/ListPosts/ListPosts'
-import EditPost from "./components/pages/EditPost/EditPost";
+import EditPost from './components/pages/EditPost/EditPost'
+import Post from './components/pages/Post/Post'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/newpost' element={<NewPost />}/>
           <Route path='/listposts' element={<ListPosts />}/>
           <Route path='/editpost/:id' element={<EditPost />}/>
+          <Route path='/post/:id' element={<Post />}/>
         </Routes>
       </Container>
       <Footer />
