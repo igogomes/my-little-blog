@@ -1,5 +1,6 @@
-import { useParams } from 'react-router-dom'
 import styles from './EditPost.module.css'
+
+import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 import Loading from '../../layout/Loading/Loading'
