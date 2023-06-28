@@ -11,7 +11,7 @@ function Contact() {
             </div>
             <div className={styles.contactMainContent}>
                 <div className={styles.imageFormContact}>
-                    <img src="https://picsum.photos/id/152/360/480" alt="Contact" />
+                    <img src="https://picsum.photos/id/305/360/480" alt="Contact" />
                 </div>
                 <div className={styles.containerContactForm}>
                     <ContactForm btnTitle="Enviar" direction="/"/>
